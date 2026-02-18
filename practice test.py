@@ -42,5 +42,29 @@ while num == True:
     if num5 <= 100 and num5 >= 50:
         total += num5
     if total >= 200:
-        print ("The number is bigger than 200")
+        print ("The number is equal to or bigger than 200")
         num = False
+
+print ( "Now the bar code")
+barcode = "1234567890123"
+
+#making it say the different parts of the barcode and if its valid or not
+if len(barcode) == 13:
+    print("This is a valid barcode")
+    print("The country of origin", barcode[0:2])
+    print("The manufacturer code", barcode[2:7])
+    print("The product code", barcode[7:12])
+else:   
+    print("This is not a valid barcode")
+
+a = 1
+b = 1
+
+loop = int(input("How many times do you want to repeat the loop? "))
+for i in range(0,loop):
+    a = a+b
+    print (a)
+    b = a+b
+    print (b)
+
+
